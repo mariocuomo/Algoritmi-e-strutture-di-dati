@@ -6,7 +6,7 @@
 /*
 STRUTTURA CHE RAPPRESENTA UNO STACK CONTENTENTE I SEGUENTI CAMPI:
 	-vettore: array di interi positivi
-	-ultimo: prima posizione libera all'interno di vettore
+	-ultimo: riferiemento alla posizione dell'ultimo elemento inserito
 	-dimensione: dimensione dell'array
 */
 
