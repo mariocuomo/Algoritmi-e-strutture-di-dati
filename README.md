@@ -5,4 +5,5 @@ Semplici algoritmi e strutture di dati implementati in linguaggio C.
 
 ### Attualmente disponibili:
 - [x] [Stack](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/stack)
-- [ ] Questo è un’azione non completata
+- [ ] Queue
+- [ ] ...
