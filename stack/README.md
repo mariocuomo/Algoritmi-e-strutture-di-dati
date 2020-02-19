@@ -1,6 +1,6 @@
 # Stack
 
-Uno stack, coda o semplicemente pila, è un tipo astratto di dati che rappresenta una struttura di dati il cui accesso segue un approccio <b>LIFO (Last In First Out)</b>.
+Uno stack o semplicemente pila, è un tipo astratto di dati che rappresenta una struttura di dati il cui accesso segue un approccio <b>LIFO (Last In First Out)</b>.
 
 ![STACK](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/blob/master/stack/stack.png)
 
