@@ -14,5 +14,5 @@ La pila considerata è di interi positivi ed è rappresentata con una struttura 
 3. un campo che indica la dimensione dell'array
 </pre>
 
-La dimensione dell'array è gestita in maniera telescopica. Quando è raggiunto il limite massimo la dimensione è raddoppiata.
+La dimensione dell'array è gestita in maniera <b>telescopica</b>. Quando è raggiunto il limite massimo la dimensione è raddoppiata.
 Analogamente, quando il numero di elementi dell'array è molto piccolo(circa un terzo) rispetto alla grandezza dell'array, esso è ridimensionato.
