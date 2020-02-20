@@ -3,7 +3,13 @@
 
 Semplici algoritmi e strutture di dati implementati in linguaggio C.
 
-### Attualmente disponibili:
+## Attualmente disponibili
+### Strutture di dati
 - [x] [Stack](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/stack)
 - [ ] Queue
+- [ ] ...
+
+### Algoritmi
+- [x] [Selection Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/selection%20sort)
+- [ ] Insertion Sort
 - [ ] ...
