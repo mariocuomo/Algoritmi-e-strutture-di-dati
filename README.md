@@ -7,6 +7,7 @@ Semplici algoritmi e strutture di dati implementati in linguaggio C.
 ### Strutture di dati
 - [x] [Stack](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/stack)
 - [ ] Queue
+- [ ] [Liste](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/liste)
 - [ ] ...
 
 ### Algoritmi
