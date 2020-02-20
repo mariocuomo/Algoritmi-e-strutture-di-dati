@@ -35,16 +35,17 @@ int coda_piena(queue*);
 /*funzione per eliminare la testa della coda*/
 void elimina_ultimo_elemento(queue*);
 
+/*funzione per ottenere senza eliminare la testa della coda*/
+int ottieni_ultimo_elemento(queue*);
+
+/*ritorna il numero di elementi nella coda*/
+int grandezza_coda(queue*);
+
 /*funzione per svuotare tutti gli elementi di una coda*/
 void svuota_coda(queue*);
 
 /*funzione di supporto per stampare gli elementi della coda*/
 void stampa_coda(queue*);
-
-
-
-
-
 
 
 int main(){
@@ -67,8 +68,42 @@ int main(){
 
 	printf("Svuoto l'intera coda\n");
 	svuota_coda(miaCoda);
+	stampa_coda(miaCoda);
 
 
+	printf("Riempio la coda con valori random\n");
+	for(int i=0;i<5;i++){
+		int valore = rand() % 100 + 1;
+		aggiungi_elemento(miaCoda,valore);
+		printf("Ho inserito il valore %d\n",valore);
+	}
+
+	stampa_coda(miaCoda);
+
+	printf("Svuoto l'intera coda passo dopo passo\n");
+	for(int i=0;i<5;i++){
+		elimina_ultimo_elemento(miaCoda);
+		stampa_coda(miaCoda);
+	}
+
+	printf("Simulo una gestione di una coda, riempendo e eliminando elementi dalla random\n");
+	for(int i=0;i<20;i++){
+		int valore_decisione=rand() % 100 + 1;
+		
+		//aggiungo
+		if(valore_decisione>50){
+			printf("Aggiungo\n");
+			int valore = rand() % 100 + 1;
+			aggiungi_elemento(miaCoda,valore);
+			stampa_coda(miaCoda);
+		}
+		//elimino
+		else{
+			printf("Elimino\n");
+			elimina_ultimo_elemento(miaCoda);
+			stampa_coda(miaCoda);
+		}
+	}
 
 }
 
@@ -113,11 +148,33 @@ void elimina_ultimo_elemento(queue* c){
 		c->testa=0;
 }
 
+int ottieni_ultimo_elemento(queue* c){
+	if(coda_vuota(c)==1)
+		printf("La coda e' vuota!");
+	return c->vettore[c->testa];
+}
+
+int grandezza_coda(queue* c){
+	if(coda_vuota(c)==1)
+		return 1;
+	if(coda_piena(c)==1)
+		return c->dimensione-1;
+
+	if(c->coda > c->testa)
+		return c->coda-c->testa;
+	return c->coda + c->dimensione-c->testa;
+}
+
+void svuota_coda(queue* c){
+	c->testa=c->coda;
+}
+
+
 void stampa_coda(queue* c){
 	if(coda_vuota(c)==1)
 		printf("La coda e' vuota!\n");
 	else{
-		printf("La coda contiene i seguenti elementi\n");
+		printf("La coda contiene %d elementi, che sono i seguenti\n",grandezza_coda(c));
 		//posizione standard
 		if(c->coda > c->testa){
 			for(int i=c->testa;i<c->coda;i++)
