@@ -53,6 +53,9 @@ int stack_pieno(stack*);
 */
 int stack_vuoto(stack*);
 
+/*funzione per svuotare uno stack*/
+void svuota_stack(stack*);
+
 
 int main(){
 	printf("Questa simulazione crea uno stack di 5 elementi interi positivi\n");
@@ -99,6 +102,11 @@ int main(){
 	for(int i=0;i<5;i++)
 		aggiungi_elemento(mioStack,rand()%(11));
 
+	printf("Situazione attuale:\n");
+	stampa_stack(mioStack);
+
+	printf("Svuoto tutto lo stack\n");
+	svuota_stack(mioStack);
 	printf("Situazione attuale:\n");
 	stampa_stack(mioStack);
 
@@ -199,10 +207,10 @@ int stack_vuoto(stack* s){
 	return 0;
 }
 
-
-
-
-
+void svuota_stack(stack* s){
+	s->ultimo=-1;
+	modifica_dimensione_array(s,3);
+}
 
 
 

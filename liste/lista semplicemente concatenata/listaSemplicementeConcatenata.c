@@ -15,6 +15,9 @@ typedef struct elem{
 /*lista è un puntatore a un elemento*/
 typedef elemento* lista;
 
+/*funzione per creare una nuova lista*/
+lista crea_lista();
+
 /*aggiunge un elemento in coda, costosa perchè proporzionale al numero di elementi*/
 void aggiungi_elemento_in_coda(lista*,int);
 
@@ -57,7 +60,7 @@ void stampa_lista(lista);
 
 int main(){
 	printf("Questa simulazione crea una lista 5 elementi interi positivi\n");
-	lista miaLista = NULL;
+	lista miaLista = crea_lista();
 
 
 	//riempio la lista di 5 elementi random inseriti in coda
@@ -145,6 +148,9 @@ int main(){
 }
 
 
+lista crea_lista(){
+	return NULL;
+}
 
 void aggiungi_elemento_in_coda(lista* lst, int valore){
 	if(lista_vuota(*lst)==1){
@@ -311,3 +317,4 @@ void stampa_lista(lista lst){
 
 	}
 }
+
