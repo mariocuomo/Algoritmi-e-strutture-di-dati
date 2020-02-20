@@ -3,6 +3,8 @@
 
 Semplici algoritmi e strutture di dati implementati in linguaggio C.
 
+Per testare il codice è disponibile il seguente compilatore online https://www.onlinegdb.com/
+
 ## Attualmente disponibili
 ### Strutture di dati
 - [x] [Stack](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/stack)
