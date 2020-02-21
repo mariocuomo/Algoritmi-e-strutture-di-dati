@@ -247,7 +247,7 @@ int visualizza_elemento_in_coda(lista lst){
 }
 
 void elimina_elemento(lista* lst, elemento* el){
-	if(lista_vuota(*lst))
+	if(lista_vuota(*lst)==1)
 		printf("La lista è vuota, cosa vuoi eliminare?\n");
 	else{		
 		if(grandezza_lista(*lst)==1){
@@ -277,7 +277,7 @@ void elimina_elemento(lista* lst, elemento* el){
 
 
 void elimina_elemento_i(lista* lst, int posizione){
-	if(lista_vuota(*lst))
+	if(lista_vuota(*lst)==1)
 		printf("La lista è vuota, cosa vuoi eliminare?\n");
 	else{
 		int dimensioneLista = grandezza_lista(*lst);

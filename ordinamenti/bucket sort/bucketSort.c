@@ -93,19 +93,25 @@ void bucketSort(int* v, int lunghezza){
 	int max=calcola_massimo(v,lunghezza);
 	lista vettoreBucket[max+1];
 
-	for(int i=0;i<lunghezza;i++)
-		aggiungi_elemento_in_testa(&vettoreBucket[i],v[i]);
+	//setto a NULL i bucket
+	for(int i=0;i<max+1;i++)
+		vettoreBucket[i]=crea_lista();
 
-	for(int i=0;i<lunghezza;i++){
+	//riempio i bucket
+	for(int i=0;i<lunghezza;i++)
+		aggiungi_elemento_in_testa(&vettoreBucket[v[i]],v[i]);
+
+	//attacco i bucket
+	int i=0; //indica la posizione nel vettore bucket
+	int j=0; //indica la posizione di salvataggio nel vettore di partenza
+	for(;i<max+1;i++){
 		lista scanner = vettoreBucket[i];
 		while(scanner!=NULL){
-			v[i]=scanner->info;
-			i++;
+			v[j]=scanner->info;
+			j++;
 			scanner=scanner->next;
 		}
 	}
-
-
 
 }
 
@@ -113,27 +119,43 @@ void bucketSort_stampa(int* v,int lunghezza){
 	int max=calcola_massimo(v,lunghezza);
 	lista vettoreBucket[max+1];
 
-	for(int i=0;i<lunghezza;i++)
-		aggiungi_elemento_in_testa(&vettoreBucket[i],v[i]);
+	//setto a NULL i bucket
+	for(int i=0;i<max+1;i++)
+		vettoreBucket[i]=crea_lista();
 
-	//stampo bucket
+	//riempio i bucket
+	for(int i=0;i<lunghezza;i++)
+		aggiungi_elemento_in_testa(&vettoreBucket[v[i]],v[i]);
+
+
+	//stampo i bucket
 	for(int i=0;i<max+1;i++){
-		printf("bucket %d :",i);
+		printf("bucket %d contiene: ",i);
 		stampa_lista(vettoreBucket[i]);
+		printf("\n");
 	}
 
+	//attacco i bucket
+	int i=0; //indica la posizione nel vettore bucket
+	int j=0; //indica la posizione di salvataggio nel vettore di partenza
+	for(;i<max+1;i++){
+		lista scanner = vettoreBucket[i];
+		while(scanner!=NULL){
+			v[j]=scanner->info;
+			j++;
+			scanner=scanner->next;
+		}
+	}
 }
 
 void stampa_lista(lista lst){
 	if(lst==NULL)
-		printf("La lista e' vuota\n");
+		printf("nessun elemento");
 	else{
-		printf("Ecco gli elementi della lista:\n");
 		while(lst!=NULL){
 			printf("%d ",lst->info);
 			lst=lst->next;
 		}
-
 	}
 }
 
