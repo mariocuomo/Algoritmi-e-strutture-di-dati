@@ -1,6 +1,6 @@
 # Counting Sort
 
-Il counting sort è un algoritmo di ordinamento che opera in un tempo lineare, proporzionale alla grandella dell'input.
+Il counting sort è un algoritmo di ordinamento che opera in un tempo lineare, proporzionale alla grandezza dell'input.
 
 Può essere applicato quando i valori di input sono interi positivi ed è consigliato applicarlo quando il valore massimo dell'array è al più pari alla grandezza dell'input.
 
