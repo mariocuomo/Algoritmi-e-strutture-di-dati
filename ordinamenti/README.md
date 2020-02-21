@@ -7,6 +7,7 @@ Il problema dell'ordinamento riceve in input una sequenza di interi <b><a1,a2,..
 ## Attualmente disponibili
 - [x] [Selection Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/selection%20sort)
 - [x] [Bubble Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/bubble%20sort)
-- [ ] Insertion Sort
+- [x] [Insertion Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/insertion%20sort)
 - [x] [Counting Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/counting%20sort)
+- [ ] Bucket Sort
 - [ ] ...
