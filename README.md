@@ -17,5 +17,5 @@ Per testare il codice è disponibile il seguente compilatore online https://www.
 - [x] [Bubble Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/bubble%20sort)
 - [x] [Insertion Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/insertion%20sort)
 - [x] [Counting Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/counting%20sort)
-- [ ] Bucket Sort
+- [x] [Bucket Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/bucket%20sort)
 - [ ] ...
