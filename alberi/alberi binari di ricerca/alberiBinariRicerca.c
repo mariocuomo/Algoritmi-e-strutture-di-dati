@@ -79,10 +79,9 @@ int nodi_minori(albero, int);
 */
 int nodi_maggiori(albero, int);
 
-/*
-=======DA IMPLEMENTARE====
--verifica se è un ABR 
-*/
+/*funzione di supporto per stampare tutti i nodi dell'albero in ordine crescente*/
+void stampa(albero);
+
 
 int main(){
 	printf("La seguente simulazione crea un albero binario di ricerca della seguente forma\n");
@@ -180,7 +179,8 @@ int main(){
 	printf("Attualmente ho un albero con le seguenti caratteristiche:\nNodi: %d\nFigli radice: %d\nFoglie: %d\nAltezza: %d\n",numero_nodi(mioAlbero),numero_figli(mioAlbero),conta_foglie(mioAlbero),altezza_albero(mioAlbero));
 	printf("Il valore piu' piccolo e' %d mentre quello piu' grande e' %d\n",calcola_minimo(mioAlbero),calcola_massimo(mioAlbero));
 
-
+	printf("Ecco tutti i nodi dell'albero\n");
+	stampa(mioAlbero);
 }
 
 albero crea_albero_vuoto(){
@@ -346,6 +346,7 @@ int nodi_maggiori(albero t, int valore){
 	return nodi_maggiori(t->left,valore)*nodi_maggiori(t->right,valore);
 }
 
+
 int conta_foglie(albero t){
 	if(e_foglia(t)==1)
 		return 1;
@@ -356,4 +357,11 @@ int conta_foglie(albero t){
 	return conta_foglie(t->left)+conta_foglie(t->right);
 }
 
+void stampa(albero t){
+	if(t!=NULL){
+		stampa(t->left);
+		printf("%d ", t->info);
+		stampa(t->right);
+	}
+}
 
