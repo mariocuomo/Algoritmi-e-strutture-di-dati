@@ -16,4 +16,5 @@ La lista considerata è di interi e ogni nodo di essa è rappresentato con una s
 ## Attualmente disponibili
 - [x] [Lista semplicemente concatenata](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/liste/lista%20semplicemente%20concatenata)
 - [x] [Lista doppiamente concatenata](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/liste/lista%20doppiamente%20concatenata)
+- [x] [Lista tramite array](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/liste/liste%20tramite%20array)
 - [ ] ...
