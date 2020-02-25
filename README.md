@@ -20,4 +20,5 @@ Per testare il codice è disponibile il seguente compilatore online https://www.
 - [x] [Counting Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/counting%20sort)
 - [x] [Bucket Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/bucket%20sort)
 - [x] [Merge Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/merge%20sort)
+- [x] [Tree Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/tree%20sort)
 - [ ] ...
