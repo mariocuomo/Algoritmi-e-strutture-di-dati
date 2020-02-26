@@ -5,9 +5,9 @@
 #define LUNGHEZZAPAROLE 10
 #define NUMEROPAROLE 10
 
-/*funzione di ordinamento crescente ordine di n+m
+/*funzione di ordinamento crescente ordine di n*m
 	-n, dimensione dell'input
-	-m, massimo valore dell'input
+	-m, massimo medio del numero di elementi
 */
 void radixSort(int**);
 
