@@ -1,6 +1,5 @@
 #include <stdio.h>
-
-
+#include <stdlib.h>
 
 
 /*
@@ -96,7 +95,7 @@ int main(){
 	printf("La coda è stata rigenerata per soddisfare la condizione di max heap\n");
 	stampa_con_informazioni(miaCoda->vettore, miaCoda->dimensione_attuale);
 
-	printf("Inserisco il valore 12 nella coda di priorità");
+	printf("Inserisco il valore 90 nella coda di priorità");
 	inserisci(miaCoda,90);
 	printf("La coda è stata rigenerata per soddisfare la condizione di max heap\n");
 	stampa_con_informazioni(miaCoda->vettore, miaCoda->dimensione_attuale);
