@@ -25,4 +25,5 @@ Per testare il codice è disponibile il seguente compilatore online https://www.
 - [x] [Quick Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/quick%20sort)
 - [x] [Radix Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/radix%20sort)
 - [x] [Selection Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/selection%20sort)
+- [x] [Stupid Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/stupid%20sort)
 - [x] [Tree Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/tree%20sort)
