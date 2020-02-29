@@ -13,6 +13,7 @@ Per testare il codice è disponibile il seguente compilatore online https://www.
 - [x] [Alberi](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/alberi)
 - [x] [Heap](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/heap)
 - [x] [Code di priorità](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/code%20di%20priorit%C3%A0)
+- [x] [Hash table](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/tabelle%20hash)
 - [ ] ...
 
 ### Algoritmi
