@@ -17,6 +17,7 @@ Per testare il codice è disponibile il seguente compilatore online https://www.
 - [ ] ...
 
 ### Algoritmi
+<b>Approfondimento disponibile su Amazon [qui](https://www.amazon.it/dp/B085KMGMPQ/ref=sr_1_4?keywords=Algoritmi&qid=1583486867&s=books&sr=1-4)</b>.
 - [x] [Bubble Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/bubble%20sort)
 - [x] [Bucket Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/bucket%20sort)
 - [x] [Counting Sort](https://github.com/mariocuomo/Algoritmi-e-strutture-di-dati/tree/master/ordinamenti/counting%20sort)
